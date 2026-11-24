@@ -1,0 +1,67 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Outils Python =====
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ruff
+.ruff_cache/
+
+# ===== FastAPI / Uvicorn =====
+*.log
+logs/
+
+# ===== Docker =====
+# (rien de spécifique à ignorer, mais on évite les fichiers de build locaux)
+*.tar
+*.tar.gz
+
+# ===== IDE / Éditeurs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Fichiers d'environnement (secrets) =====
+.env
+.env.*
+!.env.example
+
+# ===== Sorties PDF générées localement (tests) =====
+*.pdf
+!tests/fixtures/*.pdf
+
+# ===== Divers =====
+.cache/
+tmp/
+temp/
